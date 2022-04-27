@@ -129,9 +129,51 @@ aside {
 }
 
 .article {
-    background-color: lightcoral;
-    padding: 20px;
     grid-column: 2 / 3;
+    background-color: lightcoral;
+    padding: 30px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    grid-template-columns: 3fr 1fr;
+    gap: 5px;
+    
+}
+
+.news {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 50px;
+}
+
+.card {
+    border: solid;
+    padding: 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+}
+
+.trending {
+    border: solid;
+    height: 40%;
+}
+
+.trending-user {
+    display: flex;
+}
+
+.trending-user img {
+    width: 35px;
+}
+
+.announcements {
+    border: solid;
+    height: 40%;
+    overflow: auto;
 }
 
 footer {
@@ -139,3 +181,4 @@ footer {
     padding: 20px;
     grid-column: 1 / 4;
 }
+
