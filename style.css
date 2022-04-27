@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300;1,400&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans Pro';
 }
 
 body {
@@ -11,15 +14,10 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr ;
-    gap: 5px;
+    grid-template-rows: 1fr 5fr;
 }
 
-
 nav {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -36,9 +34,15 @@ nav {
     color: white;
     display: flex;
     align-items: flex-start;
+    height: fit-content;
 }
 
-li img, .title img {
+.utilities {
+    margin-top: 50px;
+}
+
+li img,
+.title img {
     padding-right: 10px;
 }
 
@@ -55,24 +59,73 @@ li {
 }
 
 header {
+    padding: 20px;
     background-color: lightsalmon;
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
 }
 
-.searchbar  {
-    border: solid;
+.button {
+    display: flex;
+    height: min-content;
+    justify-content: space-evenly;
+    align-self: center;
+    justify-self: center;
 }
 
+button {
+    padding: 7px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 12px;
+}
+
+.user-greetings {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.user-greetings img {
+    width: 60px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-img {
+    width: 35px;
+}
+
+.search {
+    display: flex;
+    gap: 3%;
+    height: 30px;
+    align-self: center;
+}
+
+input[type="text"] {
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid #ffff;
+}
 
 aside {
     grid-row: 1/3;
     display: grid;
-    grid-template-rows: 1fr 7fr;
-    padding: 10px;
-    
+    grid-template-rows: 1fr 9fr;
+    padding: 20px;
+
 }
 
 .article {
