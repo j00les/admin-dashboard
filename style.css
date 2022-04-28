@@ -180,5 +180,7 @@ footer {
     background-color: lightblue;
     padding: 20px;
     grid-column: 1 / 4;
+    display: grid;
+    justify-items: center;
 }
 
