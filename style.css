@@ -142,19 +142,24 @@ aside {
 .news {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-between;
+  /* gap: 70px; */
 }
 
 .card {
   border: solid;
   padding: 20px;
+  font-size: large;
 }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 10px;
+}
+
+.projects h2 {
+  display: block;
 }
 
 .trending {
